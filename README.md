@@ -13,7 +13,7 @@ If there are more than one result, the lowest in lexicographicaly order will be 
 
 #### Dependencies
 This C++ program use permutation algorithm combine together with hungarian algorithm.
-I use implementation of hungarian algorithm from https://github.com/mcximing/hungarian-algorithm-cpp.git but with some modification.
+I use implementation of hungarian algorithm from https://github.com/mcximing/hungarian-algorithm-cpp.git but with some modifications.
 
 #### Hungarian algorithm
 https://en.wikipedia.org/wiki/Hungarian_algorithm
@@ -30,14 +30,16 @@ Then, to build the program you just need to do one of these:
 * make release
 
 #### Example
+`
 matrix = {
 	{1, 1, 4},
 	{3, 1, 8},
 	{9, 1, 8},
 	{5, 6, 10}
 }
+`
 
 k = 3.
 
-==> output string = "(1-2;2-0;3-1)"
+==> output string = "(1-2;2-0;3-1)" <br />
 ==> max sum of weight = matrix[1][2] + matrix[2][0] + matrix[3][1] = 8 + 9 + 6 = 23.
